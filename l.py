@@ -4,7 +4,6 @@ import pandas as pd
 import streamlit as st 
 import datetime
 import random
-import matplotlib.pyplot as plt 
 
 st.write("# Parking Lot")
 
