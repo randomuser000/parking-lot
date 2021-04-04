@@ -31,7 +31,7 @@ def read_info():
     spots[8] = newspots[8]
     spots[9] = newspots[9]
 
-spot_number = st.number_input("spot number (1-10)")
+spot_number = st.selectbox("spot number (1-10)", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 if st.button("reserve"):
     x = int(spot_number)
     if x == 1:
@@ -125,7 +125,7 @@ if st.button("reserve"):
         else:
             st.write("that spot is already taken")
 
-free_spot = st.number_input("parking spot number (1-10)")
+free_spot = st.selectbox("parking spot number (1-10)", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 if st.button("free"):
     y = int(free_spot)
     if y == 1:
